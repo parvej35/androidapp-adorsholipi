@@ -7,7 +7,7 @@ Kids can learn the following feature using this application with proper sound:
 2. English: Alphabet, Number, Day name, Month name, Season name
 3. Arabic: Arabic alphabet, Number, Day name, Month name, Season name
 
-# App URL
+# Playstore App URL
 https://play.google.com/store/apps/details?id=technovalleyit.Adorsholipi
 
 # Contact
