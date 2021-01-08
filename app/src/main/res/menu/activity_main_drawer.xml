@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_topic_arabic"
+            android:icon="@drawable/ic_arabic3_128"
+            android:title="আরবি পরিচ্ছেদ" />
+        <item
+            android:id="@+id/nav_topic_bangla"
+            android:icon="@drawable/ic_bangla_48"
+            android:title="বাংলা পরিচ্ছেদ" />
+        <item
+            android:id="@+id/nav_topic_english"
+            android:icon="@drawable/ic_english_48"
+            android:title="ইংরেজি পরিচ্ছেদ" />
+
+        <!--<item
+            android:id="@+id/nav_bangla_poem"
+            android:icon="@drawable/ic_literature_128"
+            android:title="বাংলা ছড়া ও কবিতা" />-->
+
+        <!--<item
+            android:id="@+id/nav_manage1"
+            android:icon="@drawable/ic_literature_128"
+            android:title="ইংরেজি ছড়া ও কবিতা" />-->
+    </group>
+
+    <item android:title="@string/developer">
+        <menu>
+            <item
+                android:id="@+id/nav_version"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="অ্যাপ ভার্সন" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="শেয়ার করুন" />
+            <item
+                android:id="@+id/nav_rating"
+                android:icon="@drawable/ic_star"
+                android:title="রেটিং দিন" />
+            <item
+                android:id="@+id/nav_more_app"
+                android:icon="@drawable/ic_more"
+                android:title="অন্যান্য অ্যাপলিকেশন" />
+        </menu>
+    </item>
+
+</menu>

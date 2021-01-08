@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">আদর্শলিপি</string>
+    <string name="app_slogan">শিশুর প্রথম পাঠ</string>
+    <string name="title">আদর্শলিপি (একের ভিতরে সব)</string>
+
+    <string name="bangla_poem">বাংলা ছড়া ও কবিতা</string>
+    <string name="english_rhymes">English Rhymes</string>
+
+    <string name="bangla">বাংলা</string>
+    <string name="english">ইংরেজি</string>
+    <string name="arabic">আরবি</string>
+    <string name="article">Article</string>
+    <string name="number">Number</string>
+    <string name="preposition">Preposition</string>
+    <string name="tense">Tense</string>
+    <string name="verb">Verb</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="spelling">Spelling</string>
+    <string name="other">OTHER</string>
+
+    <string name="message">শিশুদের বর্ণমালা হাতেখড়ি দেওয়ার একটি অনন্য অ্যান্ড্রয়েড অ্যাপলিকেশন</string>
+
+    <string name="developer">TechnoValley IT</string>
+
+    <string name="app_link">https://play.google.com/store/apps/details?id=</string>
+
+    <string name="url_market_details">market://details?id=</string>
+    <string name="url_market_search_app">market://search?q=pub:</string>
+    <string name="url_playstore_search_app">http://play.google.com/store/search?q=pub:</string>
+    <string name="install_google_play_store">Install google play store and then try again.</string>
+
+    <string name="admob_app_id">ca-app-pub-9254048825255246~9471948575</string>
+
+    <!--Testing Banner Add ID-->
+<!--        <string name="banner_add_1">ca-app-pub-3940256099942544/6300978111</string>-->
+
+    <!--Live Banner Add ID-->
+    <string name="banner_add_1">ca-app-pub-9254048825255246/2140253466</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+</resources>

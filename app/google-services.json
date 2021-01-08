@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "198872409663",
+    "firebase_url": "https://adorsholipi.firebaseio.com",
+    "project_id": "adorsholipi",
+    "storage_bucket": "adorsholipi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198872409663:android:ed9a3ef8611c6b34",
+        "android_client_info": {
+          "package_name": "technovalleyit.Adorsholipi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198872409663-tasdnpk3uals1oomkpj1pfa0k88heqfb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "technovalleyit.Adorsholipi",
+            "certificate_hash": "d6b0e362e4697ad6ad318a9206f8fa31864bcf1a"
+          }
+        },
+        {
+          "client_id": "198872409663-i6ahgpcv4qiuqnfatf7f4sd4c1ruuttr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT5VEgk4_u0Gqx3DBjgT_m3jl4Y7kIPY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198872409663-i6ahgpcv4qiuqnfatf7f4sd4c1ruuttr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-9254048825255246~9471948575"
+    }
+  ],
+  "configuration_version": "1"
+}
