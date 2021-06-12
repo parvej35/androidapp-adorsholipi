@@ -38,6 +38,8 @@
     <!--Live Banner Add ID-->
     <string name="banner_add_1">ca-app-pub-9254048825255246/2140253466</string>
 
+    <string name="qureka_banner_url">http://331.win.qureka.com/</string>
+
     <string name="title_activity_main">MainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

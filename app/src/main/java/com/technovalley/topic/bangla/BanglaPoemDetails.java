@@ -85,7 +85,8 @@ public class BanglaPoemDetails extends AppCompatActivity {
     }
 
     private void loadBanner() {
-        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        //AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        AdRequest adRequest = new AdRequest.Builder().build();
 
         AdSize adSize = getAdSize();
         adView.setAdSize(adSize);

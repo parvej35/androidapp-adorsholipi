@@ -2,6 +2,7 @@ package com.technovalley.topic.arabic;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Display;
@@ -9,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -76,13 +78,24 @@ public class ArabicAlphabet extends AppCompatActivity {
             findViewById(R.id.layout_27).setOnClickListener(new View.OnClickListener() { public void onClick(View v) { playSound(R.raw.waw); } });
             findViewById(R.id.layout_28).setOnClickListener(new View.OnClickListener() { public void onClick(View v) { playSound(R.raw.ya); } });
 
+            LinearLayout qureka_banner = (LinearLayout) findViewById(R.id.layout_qureka_banner);
+            qureka_banner.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(getString(R.string.qureka_banner_url)));
+                    startActivity(i);
+                }
+            });
+
         } catch (Exception ex) {
             Toast.makeText(getApplicationContext(), ex.getMessage(), Toast.LENGTH_LONG).show();
         }
     }
 
     private void loadBanner() {
-        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        //AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        AdRequest adRequest = new AdRequest.Builder().build();
 
         AdSize adSize = getAdSize();
         adView.setAdSize(adSize);

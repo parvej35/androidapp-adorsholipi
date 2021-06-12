@@ -2,6 +2,7 @@ package com.technovalley.topic.english;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Display;
@@ -104,13 +105,24 @@ public class EnglishNumber extends AppCompatActivity {
             findViewById(R.id.layout_49).setOnClickListener(new View.OnClickListener() { public void onClick(View v) { playSound(R.raw.e49); } });
             findViewById(R.id.layout_50).setOnClickListener(new View.OnClickListener() { public void onClick(View v) { playSound(R.raw.e50); } });
 
+            LinearLayout qureka_banner = (LinearLayout) findViewById(R.id.layout_qureka_banner);
+            qureka_banner.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(getString(R.string.qureka_banner_url)));
+                    startActivity(i);
+                }
+            });
+
         } catch (Exception ex) {
             Toast.makeText(getApplicationContext(), ex.getMessage(), Toast.LENGTH_LONG).show();
         }
     }
 
     private void loadBanner() {
-        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        //AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        AdRequest adRequest = new AdRequest.Builder().build();
 
         AdSize adSize = getAdSize();
         adView.setAdSize(adSize);

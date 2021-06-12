@@ -2,6 +2,7 @@ package com.technovalley;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.DisplayMetrics;
@@ -30,7 +31,6 @@ import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.navigation.NavigationView;
 import com.technovalley.topic.arabic.ArabicTopic;
-import com.technovalley.topic.bangla.BanglaPoemList;
 import com.technovalley.topic.bangla.BanglaTopic;
 import com.technovalley.topic.english.EnglishTopic;
 
@@ -120,13 +120,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             });*/
 
             //-------------RATE-THIS-APP---------------------
-            /*LinearLayout layout5 = (LinearLayout) findViewById(R.id.layout_ratting);
+            LinearLayout layout5 = (LinearLayout) findViewById(R.id.layout_ratting);
             layout5.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     new PlayStoreLink().rateApp(view.getContext());//do not change view.getContext()
                 }
-            });*/
+            });
 
             //-------------FEEDBACK---------------------
             /*LinearLayout layout = (LinearLayout) findViewById(R.id.layout_feedback);
@@ -152,9 +152,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 @Override
                 public void onClick(View view) {
                     new PlayStoreLink().moreApps(view.getContext());
-            }//do not change view.getContext()
+                }//do not change view.getContext()
             });
 
+            LinearLayout qureka_banner = (LinearLayout) findViewById(R.id.layout_qureka_banner);
+            qureka_banner.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(getString(R.string.qureka_banner_url)));
+                    startActivity(i);
+                }
+            });
 
 
         } catch (Exception ex) {
@@ -163,7 +172,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void loadBanner() {
-        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        //AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        AdRequest adRequest = new AdRequest.Builder().build();
 
         AdSize adSize = getAdSize();
         adView.setAdSize(adSize);
@@ -250,8 +260,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
             builder.setView(image);
-            builder.setTitle("আদর্শলিপি - v5.0.1");
-            builder.setMessage("\nReleased On :\nJanuary 01, 2021" +
+            builder.setTitle("আদর্শলিপি - v5.0.2");
+            builder.setMessage("\nReleased On :\nJune 12, 2021" +
                     "\n\nWhat Changes :\n- Fixed minor bugs.\n- Improved performance.\n- Reduced application size.\n");
             builder.setCancelable(true);
 

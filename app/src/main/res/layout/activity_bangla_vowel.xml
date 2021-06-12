@@ -259,6 +259,25 @@
                 </LinearLayout>
             </TableRow>
 
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layout_qureka_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/qureka5_50" />
+
+                </LinearLayout>
+            </TableRow>
+
         </TableLayout>
 
     </ScrollView>
