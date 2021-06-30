@@ -13,4 +13,4 @@ Kids can learn the following feature using this application with proper sound:
 https://play.google.com/store/apps/details?id=technovalleyit.Adorsholipi
 
 # Contact
-To get access into source code, send mail at technovalleyit@gmail.com
+To get access into source code, send mail at parvej35@gmail.com
